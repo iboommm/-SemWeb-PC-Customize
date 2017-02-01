@@ -1,0 +1,3397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localhost/computer#"
+     xml:base="http://localhost/computer"
+     xmlns:computer="http://localhost/computer#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localhost/computer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#capacity -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#capacity"/>
+    
+
+
+    <!-- http://localhost/computer#ddr -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#ddr"/>
+    
+
+
+    <!-- http://localhost/computer#fname -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#fname"/>
+    
+
+
+    <!-- http://localhost/computer#name -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#name"/>
+    
+
+
+    <!-- http://localhost/computer#price -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#price"/>
+    
+
+
+    <!-- http://localhost/computer#socket -->
+
+    <owl:AnnotationProperty rdf:about="http://localhost/computer#socket"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#hasCASE -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasCASE">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasGraphicSystem -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasGraphicSystem">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#VGA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasHarddisk -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasHarddisk">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#HDD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasMainBoard -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasMainBoard">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#Mainboard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasMainMemory -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasMainMemory">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#RAM"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasOS -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasOS">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasPowerSupply -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasPowerSupply">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#Power_Supply"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasProcessor -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasProcessor">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#CPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/computer#hasSSD -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/computer#hasSSD">
+        <rdfs:domain rdf:resource="http://localhost/computer#Computer"/>
+        <rdfs:range rdf:resource="http://localhost/computer#SSD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#AM3PLUS -->
+
+    <owl:Class rdf:about="http://localhost/computer#AM3PLUS">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#AMD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#AMD -->
+
+    <owl:Class rdf:about="http://localhost/computer#AMD">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Mainboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#ASROCK -->
+
+    <owl:Class rdf:about="http://localhost/computer#ASROCK">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#ASUS -->
+
+    <owl:Class rdf:about="http://localhost/computer#ASUS">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#ATX -->
+
+    <owl:Class rdf:about="http://localhost/computer#ATX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Brand -->
+
+    <owl:Class rdf:about="http://localhost/computer#Brand">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Business -->
+
+    <owl:Class rdf:about="http://localhost/computer#Business">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#CORSAIR -->
+
+    <owl:Class rdf:about="http://localhost/computer#CORSAIR">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#COUGAR -->
+
+    <owl:Class rdf:about="http://localhost/computer#COUGAR">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#CPU -->
+
+    <owl:Class rdf:about="http://localhost/computer#CPU"/>
+    
+
+
+    <!-- http://localhost/computer#Case -->
+
+    <owl:Class rdf:about="http://localhost/computer#Case"/>
+    
+
+
+    <!-- http://localhost/computer#Computer -->
+
+    <owl:Class rdf:about="http://localhost/computer#Computer"/>
+    
+
+
+    <!-- http://localhost/computer#DDR3 -->
+
+    <owl:Class rdf:about="http://localhost/computer#DDR3">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#RAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#DDR4 -->
+
+    <owl:Class rdf:about="http://localhost/computer#DDR4">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#RAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#EATX -->
+
+    <owl:Class rdf:about="http://localhost/computer#EATX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#FM2PLUS -->
+
+    <owl:Class rdf:about="http://localhost/computer#FM2PLUS">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#AMD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#GALAX -->
+
+    <owl:Class rdf:about="http://localhost/computer#GALAX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#GIGABYTE -->
+
+    <owl:Class rdf:about="http://localhost/computer#GIGABYTE">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#GTX -->
+
+    <owl:Class rdf:about="http://localhost/computer#GTX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#VGA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Gaming -->
+
+    <owl:Class rdf:about="http://localhost/computer#Gaming">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#HDD -->
+
+    <owl:Class rdf:about="http://localhost/computer#HDD"/>
+    
+
+
+    <!-- http://localhost/computer#INTEL -->
+
+    <owl:Class rdf:about="http://localhost/computer#INTEL">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Mainboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#ITX -->
+
+    <owl:Class rdf:about="http://localhost/computer#ITX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#KINGTON -->
+
+    <owl:Class rdf:about="http://localhost/computer#KINGTON">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#M.2 -->
+
+    <owl:Class rdf:about="http://localhost/computer#M.2">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#SSD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#MATX -->
+
+    <owl:Class rdf:about="http://localhost/computer#MATX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#MSI -->
+
+    <owl:Class rdf:about="http://localhost/computer#MSI">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Mainboard -->
+
+    <owl:Class rdf:about="http://localhost/computer#Mainboard"/>
+    
+
+
+    <!-- http://localhost/computer#NVIDIA -->
+
+    <owl:Class rdf:about="http://localhost/computer#NVIDIA">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#NZXT -->
+
+    <owl:Class rdf:about="http://localhost/computer#NZXT">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#PC -->
+
+    <owl:Class rdf:about="http://localhost/computer#PC">
+        <owl:equivalentClass rdf:resource="http://localhost/computer#Personal_Computer"/>
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Personal_Computer -->
+
+    <owl:Class rdf:about="http://localhost/computer#Personal_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Power_Supply -->
+
+    <owl:Class rdf:about="http://localhost/computer#Power_Supply"/>
+    
+
+
+    <!-- http://localhost/computer#RAM -->
+
+    <owl:Class rdf:about="http://localhost/computer#RAM"/>
+    
+
+
+    <!-- http://localhost/computer#RX -->
+
+    <owl:Class rdf:about="http://localhost/computer#RX">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#VGA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#Render -->
+
+    <owl:Class rdf:about="http://localhost/computer#Render">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#SAMSUNG -->
+
+    <owl:Class rdf:about="http://localhost/computer#SAMSUNG">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#SATA -->
+
+    <owl:Class rdf:about="http://localhost/computer#SATA">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#SSD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#SEAGATE -->
+
+    <owl:Class rdf:about="http://localhost/computer#SEAGATE">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#SEASONIC -->
+
+    <owl:Class rdf:about="http://localhost/computer#SEASONIC">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#SILVERSTONE -->
+
+    <owl:Class rdf:about="http://localhost/computer#SILVERSTONE">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#SSD -->
+
+    <owl:Class rdf:about="http://localhost/computer#SSD"/>
+    
+
+
+    <!-- http://localhost/computer#THERMALTAKE -->
+
+    <owl:Class rdf:about="http://localhost/computer#THERMALTAKE">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#TITAN -->
+
+    <owl:Class rdf:about="http://localhost/computer#TITAN">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#VGA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#VGA -->
+
+    <owl:Class rdf:about="http://localhost/computer#VGA"/>
+    
+
+
+    <!-- http://localhost/computer#WD -->
+
+    <owl:Class rdf:about="http://localhost/computer#WD">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#ZOTAC -->
+
+    <owl:Class rdf:about="http://localhost/computer#ZOTAC">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#1151 -->
+
+    <owl:Class rdf:about="http://localhost/computer#1151">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#INTEL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#2011v3 -->
+
+    <owl:Class rdf:about="http://localhost/computer#2011v3">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#INTEL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#AM3+ -->
+
+    <owl:Class rdf:about="http://localhost/computer#AM3+">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#AMD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/computer#FM2+ -->
+
+    <owl:Class rdf:about="http://localhost/computer#FM2+">
+        <rdfs:subClassOf rdf:resource="http://localhost/computer#AMD"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/computer#CASE_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_1">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#NZXT"/>
+        <fname>CASE_1</fname>
+        <name>NZXT S340 White</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2790</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_10">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <fname>CASE_10</fname>
+        <name>CORSAIR Air 540 Silver</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5070</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_11">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#SILVERSTONE"/>
+        <fname>CASE_11</fname>
+        <name>SILVERSTONE Primera Series PM01 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3890</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_12 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_12">
+        <rdf:type rdf:resource="http://localhost/computer#COUGAR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <fname>CASE_12</fname>
+        <name>COUGAR QBX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_13 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_13">
+        <rdf:type rdf:resource="http://localhost/computer#COUGAR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <fname>CASE_13</fname>
+        <name>COUGAR PANZER MAX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_14 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_14">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#COUGAR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <fname>CASE_14</fname>
+        <name>COUGAR MX310</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_15 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_15">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#THERMALTAKE"/>
+        <fname>CASE_15</fname>
+        <name>THERMALTAKE Core W100</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_16 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_16">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#THERMALTAKE"/>
+        <fname>CASE_16</fname>
+        <name>THERMALTAKE	Level 10 GT</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6100</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_17 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_17">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#THERMALTAKE"/>
+        <fname>CASE_17</fname>
+        <name>THERMALTAKE Core X71</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4790</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_18 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_18">
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#THERMALTAKE"/>
+        <fname>CASE_18</fname>
+        <name>THERMALTAKE Core X1</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2850</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_19 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_19">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#THERMALTAKE"/>
+        <fname>CASE_19</fname>
+        <name>THERMALTAKE Core V31</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_2">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#NZXT"/>
+        <fname>CASE_2</fname>
+        <name>NZXT H440 Red</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_3">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#NZXT"/>
+        <fname>CASE_3</fname>
+        <name>NZXT PHANTOM 410 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_4">
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#NZXT"/>
+        <fname>CASE_4</fname>
+        <name>NZXT SOURCE 210 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1550</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_5">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#NZXT"/>
+        <fname>CASE_5</fname>
+        <name>NZXT H630 White</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_6">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#NZXT"/>
+        <fname>CASE_6</fname>
+        <name>NZXT PHANTOM 530 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_7">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <fname>CASE_7</fname>
+        <name>CORSAIR 250D</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2190</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_8">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <fname>CASE_8</fname>
+        <name>CORSAIR Graphite 380T (Black)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CASE_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CASE_9">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Case"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <fname>CASE_9</fname>
+        <name>CORSAIR Carbide Series Clear 600C</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5190</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_0 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_0">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <fname>CPU_0</fname>
+        <name>AMD FX-6300</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_1">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <fname>CPU_1</fname>
+        <name>AMD FX-8350</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6100</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_10">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <fname>CPU_10</fname>
+        <name>INTEL Pentium G4600</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3290</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_11">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <fname>CPU_11</fname>
+        <name>INTEL Core i7-5820K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14550</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_12 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_12">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <fname>CPU_12</fname>
+        <name>INTEL Core i7-6800K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16100</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_13 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_13">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <fname>CPU_13</fname>
+        <name>INTEL Core i7-6900K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40500</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_2">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <fname>CPU_2</fname>
+        <name>AMD FX-8370E</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5900</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_3">
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <fname>CPU_3</fname>
+        <name>AMD Athlon X4 845K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2240</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_4">
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <fname>CPU_4</fname>
+        <name>AMD Athlon X4 870K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_5">
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <fname>CPU_5</fname>
+        <name>AMD A8-7650K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3190</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_6">
+        <rdf:type rdf:resource="http://localhost/computer#AMD"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <fname>CPU_6</fname>
+        <name>AMD A10-7860K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4600</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_7">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <fname>CPU_7</fname>
+        <name>INTEL Core i7-7700K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13900</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_8">
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <fname>CPU_8</fname>
+        <name>INTEL Core i5-7600K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9550</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#CPU_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#CPU_9">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CPU"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#INTEL"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <fname>CPU_9</fname>
+        <name>INTEL Core i3-7100</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4550</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_1">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_1</fname>
+        <name>KINGSTON Hyper-X Fury DDR3 8GB 1600 Blue</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2470</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_2">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GBx2</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_2</fname>
+        <name>KINGSTON Hyper-X Fury DDR3 8GB (4GBx2) 1600 Blue</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2470</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_3">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_3</fname>
+        <name>KINGSTON Hyper-X Fury DDR3 4GB 1600 Blue</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_4">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GBx2</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_4</fname>
+        <name>KINGSTON Hyper-X Fury DDR3 16GB (8GBx2) 1600 Blue</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4570</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_5">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>2GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_5</fname>
+        <name>KINGSTON Hyper-X DDR3 2GB 1600</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_6">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_6</fname>
+        <name>KINGSTON DDR3 8GB 1600 (KVR16N11/8)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2090</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_7">
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_7</fname>
+        <name>KINGSTON DDR3 4GB 1600</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">860</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_8">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_8</fname>
+        <name>CORSAIR Vengeance DDR3 8GB 1600 (4GBx2) Blue</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2420</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR3_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR3_9">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR3"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR3</ddr>
+        <fname>DDR3_9</fname>
+        <name>CORSAIR Vengeance DDR3 16GB 1600 (8GBx2)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4520</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_1">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GBx2</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_1</fname>
+        <name>GALAX HOF DDR4 16GB 4000 (8GBx2)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7500</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_10">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_10</fname>
+        <name>KINGSTON DDR4 8GB 2133</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2050</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_11">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_11</fname>
+        <name>KINGSTON DDR4 4GB 2133</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_12 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_12">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_12</fname>
+        <name>KINGSTON DDR4 16GB 2400</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4700</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_13 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_13">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_13</fname>
+        <name>KINGSTON DDR4 16GB 2133</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4770</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_14 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_14">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_14</fname>
+        <name>CORSAIR Dominator Platinum DDR4 16GB 2666 (8GBx2)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5980</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_15 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_15">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_15</fname>
+        <name>CORSAIR Dominator Platinum DDR4 16GB 3000 (8GBx2)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7580</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_16 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_16">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_16</fname>
+        <name>CORSAIR VALUESELECT DDR4 4GB 2133</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1090</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_17 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_17">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_17</fname>
+        <name>CORSAIR VALUESELECT DDR4 8GB 2133</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2190</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_18 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_18">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_18</fname>
+        <name>CORSAIR Vengeance LED DDR4 16GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_19 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_19">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>32GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_19</fname>
+        <name>CORSAIR Vengeance LED DDR4 32GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9800</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_2">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GBx2</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_2</fname>
+        <name>KINGSTON DDR4 8GB 2133 (4GBx2) Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_20 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_20">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>32GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_20</fname>
+        <name>CORSAIR Vengeance LPX DDR4 32GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9500</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_21 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_21">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>16GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_21</fname>
+        <name>CORSAIR Vengeance LPX DDR4 16GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4570</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_22 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_22">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_22</fname>
+        <name>CORSAIR Vengeance LPX DDR4 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2490</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_3">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GBx4</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_3</fname>
+        <name>KINGSTON Hyper-X Predator DDR4 16GB (4GBx4) 2666</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4980</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_4">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_4</fname>
+        <name>KINGSTON Hyper-X Fury DDR4 8GB 2400 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2450</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_5">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GBx2</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_5</fname>
+        <fname>DDR4_6</fname>
+        <name>KINGSTON Hyper-X Fury DDR4 8GB (4GBx2) 2400 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_6">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>4GB</capacity>
+        <ddr>DDR4</ddr>
+        <name>KINGSTON Hyper-X Fury DDR4 4GB 2400 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1250</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_7">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GBx4</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_7</fname>
+        <name>KINGSTON Hyper-X Fury DDR4 32GB (8GBx4) 2400 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_8">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GBx2</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_8</fname>
+        <name>KINGSTON Hyper-X Fury DDR4 16GB (8GBx2) 2400 Black</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4770</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#DDR4_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#DDR4_9">
+        <rdf:type rdf:resource="http://localhost/computer#DDR4"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#RAM"/>
+        <capacity>8GB</capacity>
+        <ddr>DDR4</ddr>
+        <fname>DDR4_9</fname>
+        <name>KINGSTON DDR4 8GB 2400</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1320</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_1">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_1</fname>
+        <name>MSI GTX960 GAMING 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7790</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_10">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_10</fname>
+        <name>GALAX GTX970 EX OC BLACK EDTION 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_11">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_11</fname>
+        <name>GALAX GTX960 EX OC WHITE 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_12 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_12">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_12</fname>
+        <name>GALAX GTX950 EX OC 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_13 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_13">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_13</fname>
+        <name>GALAX GTX950 BLACK OC SNIPER 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5090</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_14 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_14">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_14</fname>
+        <name>ASUS GTX950 STRIX DC2OC 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_15 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_15">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_15</fname>
+        <name>ASUS GTX950 OC 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_16 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_16">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_16</fname>
+        <name>Zotac GTX1080 AMP Extreme 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25980</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_17 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_17">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_17</fname>
+        <name>Zotac GTX1080 AMP EDITION 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22980</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_18 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_18">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>6GB</capacity>
+        <fname>GTX_18</fname>
+        <name>Zotac GTX1060 AMP! Edition 6GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9580</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_19 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_19">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>3GB</capacity>
+        <fname>GTX_19</fname>
+        <name>Zotac GTX1060 3GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7290</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_2">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_2</fname>
+        <name>MSI GTX950 GAMING 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_20 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_20">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_20</fname>
+        <name>Zotac GTX1050Ti OC Edition 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_21 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_21">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_21</fname>
+        <name>Zotac GTX1050Ti Mini 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5390</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_22 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_22">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_22</fname>
+        <name>Zotac GTX1050 OC 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4780</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_23 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_23">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <rdf:type rdf:resource="http://localhost/computer#ZOTAC"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_23</fname>
+        <name>Zotac GTX1050 Mini 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4280</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_24 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_24">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_24</fname>
+        <name>MSI GTX1080 GAMING X 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_25 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_25">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_25</fname>
+        <name>MSI GTX1070 GAMING X 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17300</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_26 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_26">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>6GB</capacity>
+        <fname>GTX_26</fname>
+        <name>MSI GTX1060 GAMING X 6GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11500</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_27 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_27">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>3GB</capacity>
+        <fname>GTX_27</fname>
+        <name>MSI GTX1060 GAMING X 3GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8890</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_28 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_28">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_28</fname>
+        <name>MSI GTX1050Ti GAMING X 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_29 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_29">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_29</fname>
+        <name>MSI GTX1050 GAMING X 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5380</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_3">
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_3</fname>
+        <name>MSI GTX950 ARMOR OC 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5190</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_30 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_30">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_30</fname>
+        <name>GIGABYTE GTX1080 G1 GAMING 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_31 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_31">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_31</fname>
+        <name>GIGABYTE GTX1070 G1 GAMING 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17200</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_32 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_32">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>6GB</capacity>
+        <fname>GTX_32</fname>
+        <name>GIGABYTE GTX1060 G1 GAMING 6GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_33 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_33">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_33</fname>
+        <name>GIGABYTE GTX1050Ti G1 GAMING 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6490</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_34 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_34">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_34</fname>
+        <name>GIGABYTE GTX1050 G1 GAMING 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5290</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_35 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_35">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_35</fname>
+        <name>GALAX GTX1080 HOF 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26800</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_36 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_36">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_36</fname>
+        <name>GALAX GTX1070 EXOC 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17600</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_37 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_37">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>6GB</capacity>
+        <fname>GTX_37</fname>
+        <name>GALAX GTX1060 EXOC 6GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9850</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_38 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_38">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_38</fname>
+        <name>GALAX GTX1050Ti EXOC 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5850</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_39 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_39">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_39</fname>
+        <name>ASUS GTX1080 TURBO 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_4">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_4</fname>
+        <name>GIGABYTE GTX960 XTREME GAMING 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_40 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_40">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>GTX_40</fname>
+        <name>ASUS GTX1070 TURBO 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15600</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_41 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_41">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>6GB</capacity>
+        <fname>GTX_41</fname>
+        <name>ASUS GTX1060 STRIX ROG OC 6GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12700</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_42 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_42">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_42</fname>
+        <name>ASUS GTX1050Ti STRIX OC 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6390</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_43 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_43">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_43</fname>
+        <name>ASUS GTX1050 EXPEDITION 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5290</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_5">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_5</fname>
+        <name>GIGABYTE GTX960 WindForce 2X 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5890</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_6">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>GTX_6</fname>
+        <name>GIGABYTE GTX960 G1 GAMING 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7700</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_7">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_7</fname>
+        <name>GIGABYTE GTX960 G1 Gaming 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_8">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_8</fname>
+        <name>GALAX GTX980 HOF 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#GTX_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#GTX_9">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GTX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>GTX_9</fname>
+        <name>GALAX GTX970 HOF 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12700</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_1">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>1TB</capacity>
+        <fname>HDD_1</fname>
+        <name>Western Digital Blue 1TB WD10EZEX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1580</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_2">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>1TB</capacity>
+        <fname>HDD_2</fname>
+        <name>Western Digital Red 1TB WD10EFRX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2250</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_3">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>2TB</capacity>
+        <fname>HDD_3</fname>
+        <name>Western Digital Black 2TB WD2003FZEX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4650</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_4">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#SEAGATE"/>
+        <capacity>1TB</capacity>
+        <fname>HDD_4</fname>
+        <name>SEAGATE BARRACUDA 1TB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1580</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_5">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#SEAGATE"/>
+        <capacity>1TB</capacity>
+        <fname>HDD_5</fname>
+        <name>SEAGATE SKYHAWK 1TB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1950</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_6">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SEAGATE"/>
+        <capacity>2TB</capacity>
+        <fname>HDD_6</fname>
+        <name>SEAGATE IRONWOLF NAS 2TB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3380</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_7">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>2TB</capacity>
+        <fname>HDD_7</fname>
+        <name>Western Digital Red 2TB WD20EFRX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3350</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_8">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>3TB</capacity>
+        <fname>HDD_8</fname>
+        <name>Western Digital Red 3TB WD30EFRX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4250</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#HDD_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#HDD_9">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#HDD"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>500GB</capacity>
+        <fname>HDD_9</fname>
+        <name>Western Digital Blue 500GB WD5000AAKX</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1480</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_1">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_1</fname>
+        <name>MSI H110I PRO</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2685</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_10">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_10</fname>
+        <name>MSI Z270 XPOWER GAMING TITANIUM</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12800</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_11">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_11</fname>
+        <name>MSI Z270 GAMING M7</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9700</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_12 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_12">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_12</fname>
+        <name>MSI Z270 KRAIT GAMING</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6400</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_13 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_13">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_13</fname>
+        <name>GIGABYTE GA-Z270X-GAMING 7</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9180</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_14 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_14">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_14</fname>
+        <name>GIGABYTE GA-Z270-HD3</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_15 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_15">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_15</fname>
+        <name>ASUS ROG MAXIMUS IX HERO</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12900</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_16 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_16">
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_16</fname>
+        <name>ASROCK X99E-ITX/AC</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9700</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_17 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_17">
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_17</fname>
+        <name>ASROCK X99 Extreme4</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6590</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_18 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_18">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_18</fname>
+        <name>ASUS ROG RAMPAGE V EDITION 10</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21100</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_19 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_19">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_19</fname>
+        <name>MSI X99A GAMING PRO CARBON</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13900</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_2">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_2</fname>
+        <name>GIGABYTE GA-H170N-WIFI</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_20 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_20">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_20</fname>
+        <name>GIGABYTE GA-X99-ULTRA GAMING</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11190</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_21 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_21">
+        <rdf:type rdf:resource="http://localhost/computer#EATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#2011v3"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_21</fname>
+        <name>MSI X99A GODLIKE GAMING CARBON</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19900</price>
+        <socket>2011v3</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_22 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_22">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_22</fname>
+        <name>ASUS 970 PRO GAMING/AURA</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4550</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_23 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_23">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_23</fname>
+        <name>MSI 970A GAMING PRO CARBON</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4295</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_24 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_24">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_24</fname>
+        <name>GIGABYTE GA-970 GAMING</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3555</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_25 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_25">
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_25</fname>
+        <name>ASROCK FM2A58M-VG3+</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1460</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_26 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_26">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_26</fname>
+        <name>ASUS A88XM-A USB 3.1</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2950</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_27 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_27">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_27</fname>
+        <name>ASUS A68HM-K</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1640</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_28 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_28">
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#FM2+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_28</fname>
+        <name>MSI A68HM GAMING</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2240</price>
+        <socket>FM2PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_29 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_29">
+        <rdf:type rdf:resource="http://localhost/computer#AM3PLUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#AM3+"/>
+        <ddr>DDR3</ddr>
+        <fname>MB_29</fname>
+        <name>ASROCK 970 EXTREME3 (REV2)</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2720</price>
+        <socket>AM3PLUS</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_3">
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_3</fname>
+        <name>ASROCK H170M-ITX/AC</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3870</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_4">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_4</fname>
+        <name>GIGABYTE GA-H170M-D3H DDR4</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3560</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_5">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_5</fname>
+        <name>MSI H170M-A PRO</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4290</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_6">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_6</fname>
+        <name>GIGABYTE GA-H270M-D3H</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3790</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_7">
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_7</fname>
+        <name>ASROCK H270M-ITX/ac</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3840</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_8">
+        <rdf:type rdf:resource="http://localhost/computer#ASROCK"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#ITX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_8</fname>
+        <name>ASROCK Z270M-ITX/ac</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4750</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#MB_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#MB_9">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#ATX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Mainboard"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#1151"/>
+        <ddr>DDR4</ddr>
+        <fname>MB_9</fname>
+        <name>ASUS ROG STRIX Z270G GAMING</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6750</price>
+        <socket rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1151</socket>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_1">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <fname>PS_1</fname>
+        <name>CORSAIR VS650</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2390</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_2">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#COUGAR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <fname>PS_2</fname>
+        <name>COUGAR CMX 700W</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_3">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#COUGAR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <fname>PS_3</fname>
+        <name>COUGAR ST 500W</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1750</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_4">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SEASONIC"/>
+        <fname>PS_4</fname>
+        <name>SEASONIC M12II 750W</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3390</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_5">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <rdf:type rdf:resource="http://localhost/computer#SEASONIC"/>
+        <fname>PS_5</fname>
+        <name>SEASONIC S12II 620W</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_6">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <fname>PS_6</fname>
+        <name>CORSAIR AX1500i</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16500</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_7">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <fname>PS_7</fname>
+        <name>CORSAIR CX500M</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2650</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_8">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <fname>PS_8</fname>
+        <name>CORSAIR VS550</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1790</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#PS_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#PS_9">
+        <rdf:type rdf:resource="http://localhost/computer#Business"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#Power_Supply"/>
+        <rdf:type rdf:resource="http://localhost/computer#SEASONIC"/>
+        <fname>PS_9</fname>
+        <name>SEASONIC X-Series 750W</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5350</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_1">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>RX_1</fname>
+        <name>GIGABYTE R7 350 Over Clock 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2870</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_10">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_10</fname>
+        <name>ASUS RX460 STRIX OC 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_11">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>RX_11</fname>
+        <name>ASUS RX460 DUAL 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">490</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_12 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_12">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>RX_12</fname>
+        <name>MSI RX480 GAMING X 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10300</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_13 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_13">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_13</fname>
+        <name>MSI RX480 GAMING X 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9590</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_14 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_14">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>RX_14</fname>
+        <name>MSI RX480 ARMOR OC 8G</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9490</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_15 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_15">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_15</fname>
+        <name>MSI RX470 GAMING X 4G</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7340</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_16 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_16">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>RX_16</fname>
+        <name>MSI RX470 ARMOR OC 8G</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7790</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_17 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_17">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_17</fname>
+        <name>MSI RX470 ARMOR 4G</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7850</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_18 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_18">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#MSI"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>2GB</capacity>
+        <fname>RX_18</fname>
+        <name>MSI RX460 OC 2GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4490</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_2">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>RX_2</fname>
+        <name>GIGABYTE RX480 G1 GAMING 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_3">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_3</fname>
+        <name>GIGABYTE RX480 G1 GAMING 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_4">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>RX_4</fname>
+        <name>GIGABYTE RX480 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_5">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_5</fname>
+        <name>GIGABYTE RX470 G1 GAMING 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7540</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_6">
+        <rdf:type rdf:resource="http://localhost/computer#GIGABYTE"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_6</fname>
+        <name>GIGABYTE RX460 WINDFORCE 2X OC 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_7">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>8GB</capacity>
+        <fname>RX_7</fname>
+        <name>ASUS RX480 STRIX OC 8GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10400</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_8">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_8</fname>
+        <name>ASUS RX480 DUAL OC 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#RX_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#RX_9">
+        <rdf:type rdf:resource="http://localhost/computer#ASUS"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#RX"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <capacity>4GB</capacity>
+        <fname>RX_9</fname>
+        <name>ASUS RX470 STRIX OC 4GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_1">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#SATA"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>120GB</capacity>
+        <fname>SSD_1</fname>
+        <name>KINGSTON V300 120GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_10 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_10">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#M.2"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <rdf:type rdf:resource="http://localhost/computer#WD"/>
+        <capacity>500GB</capacity>
+        <fname>SSD_10</fname>
+        <name>Western Digital	WD BLUE M.2 500GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5850</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_11 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_11">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#M.2"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SAMSUNG"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>512GB</capacity>
+        <fname>SSD_11</fname>
+        <name>SAMSUNG 950 PRO M.2 512GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12900</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_2 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_2">
+        <rdf:type rdf:resource="http://localhost/computer#GALAX"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#SATA"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>120GB</capacity>
+        <fname>SSD_2</fname>
+        <name>GALAX GAMER SSD L 120GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1950</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_3 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_3">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#SAMSUNG"/>
+        <rdf:type rdf:resource="http://localhost/computer#SATA"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>128GB</capacity>
+        <fname>SSD_3</fname>
+        <name>SAMSUNG 850 Pro Series 128GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3500</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_4 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_4">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#SATA"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>240GB</capacity>
+        <fname>SSD_4</fname>
+        <name>KINGSTON Hyper-X Savage 240GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3490</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_5 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_5">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#SAMSUNG"/>
+        <rdf:type rdf:resource="http://localhost/computer#SATA"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>250GB</capacity>
+        <fname>SSD_5</fname>
+        <name>SAMSUNG 850 EVO 250GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_6 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_6">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#KINGTON"/>
+        <rdf:type rdf:resource="http://localhost/computer#SATA"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>480GB</capacity>
+        <fname>SSD_6</fname>
+        <name>KINGSTON Hyper-X Savage 480GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5690</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_7 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_7">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#M.2"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>120GB</capacity>
+        <fname>SSD_7</fname>
+        <name>Corsair Force MP500 M.2 120GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3990</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_8 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_8">
+        <rdf:type rdf:resource="http://localhost/computer#CORSAIR"/>
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#M.2"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>240GB</capacity>
+        <fname>SSD_8</fname>
+        <name>Corsair Force MP500 M.2 240GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6290</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#SSD_9 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#SSD_9">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#M.2"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#SAMSUNG"/>
+        <rdf:type rdf:resource="http://localhost/computer#SSD"/>
+        <capacity>256GB</capacity>
+        <fname>SSD_9</fname>
+        <name>SAMSUNG 950 PRO M.2 256GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7300</price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/computer#TITAN_1 -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/computer#TITAN_1">
+        <rdf:type rdf:resource="http://localhost/computer#Gaming"/>
+        <rdf:type rdf:resource="http://localhost/computer#NVIDIA"/>
+        <rdf:type rdf:resource="http://localhost/computer#Render"/>
+        <rdf:type rdf:resource="http://localhost/computer#TITAN"/>
+        <rdf:type rdf:resource="http://localhost/computer#VGA"/>
+        <fname>TITAN_1</fname>
+        <name>NVIDIA TITAN X 12GB</name>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40500</price>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

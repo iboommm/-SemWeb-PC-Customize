@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1485729310817" name="duplicate:http://localhost/computer" uri="pc.%20-%20Copy.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1485729310817" name="duplicate:http://localhost/computer" uri="pc.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1485729310817" name="duplicate:http://localhost/computer" uri="pcc.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1485729310817" name="duplicate:http://localhost/computer" uri="pcg.rdf"/>
+    </group>
+</catalog>
